@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Box Model</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+.div1{ 
+	width:320px;
+	
+	border:5px solid green;
+	padding:10px;
+	margin:5px 0 0 0;
+	height:105px;
+	
+}
+img{
+	width:350px;
+	height:150px;
+	
+}
+.div2{
+	width:320px;
+	height:200px;
+	border:2px solid tomato;
+	padding:10px;
+	margin:5px;
+	font-family:"Times New Roman", Times, Serif
+	
+}
+.div3{
+	width:320px;
+	height:150px;
+	border:2px solid green;
+	padding:10px;
+	margin:5px;
+	box-sizing:border-box;
+	font-family:arial, Helvetica, sans-serif;
+	}
+
+</style>
+</head>
+<body>
+<img src="C:\Users\Absr\Desktop\Images\tg.jpg" alt="tigerimage">
+<div class="div1">
+<p> div width=320<br> padding=10px (left=10+right=10)=20px;<br>
+border=5px (left=5 + right=5)=10px;<br>
+ <mark><b>Total =320+20+10=350</b> </mark>
+	
+	
+</div>
+<div class="div2">
+<p>the width of this div is <mark><b>320</b></mark> &nbsp <mark>without <b>box-sizing</b></mark> and  padding= 10+10=20px<br> border=5+5=10px <br>width=320<br> <mark><b>Total=350px</b></mark></p>
+<p> Hello How are You font-family:"Times New Romans", Times, Serif<br> 
+if font name more than one word it must be in quotation marks like: "Times New Roman"</p>
+</div>
+<div class="div3"; style="float:left;">
+<p>the width of this div is <mark><b>350</b></mark> &nbsp <mark>with <b>box-sizing</mark>:border-box</b> <mark>its includes padding, border,total=350<marks> </p>
+<p> Hello How Are You. Font-family: arial, helvetica, sans-serif</p>
+</div>
+<div>
+<i class="glyphicon glyphicon-cloud" style="font-size:200px;color:skyblue;float:left"></i>
+</div>
+</body>
+</html>
